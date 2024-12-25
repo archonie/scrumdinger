@@ -23,6 +23,8 @@ struct DailyScrum: Identifiable {
         }
     }
     
+    var history: [History] = []
+    
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
         self.id = id
         self.title = title
